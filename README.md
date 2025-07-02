@@ -1,16 +1,19 @@
 # Sentiment Analysis with LSTM (PyTorch)
 
-This project performs binary sentiment classification on tweets using an LSTM-based neural network implemented in PyTorch.
+## Purpose
+
+This is my first project to learn about NLP by using LSTM networks.
+
 
 ## Objective
 
-To classify tweets as either positive or negative using deep learning techniques and apply standard natural language processing (NLP) steps, including tokenization, vocabulary building, and sequence padding.
+To classify tweets as either positive or negative.
 
 ## Dataset
 
 - Dataset: Sentiment140 (160,000 labeled tweets)
-- Labels: `0` (Negative), `4` (Positive), mapped to `0` and `1`
-
+- Labels: `0` (Negative), `4` (Positive)
+  
 ## Preprocessing
 
 - Lowercasing, removing URLs, mentions, and non-alphanumeric characters using regex
@@ -45,10 +48,4 @@ To classify tweets as either positive or negative using deep learning techniques
   - Recall (class 1): 0.72
   - F1-score (macro): 0.78
 
-## Visualization
 
-Accuracy and loss curves are plotted for both training and validation sets over all epochs.
-
-## Purpose
-
-This notebook was created for learning and practicing the full workflow of sentiment analysis with LSTM using PyTorch, from preprocessing raw text to evaluating model performance.
