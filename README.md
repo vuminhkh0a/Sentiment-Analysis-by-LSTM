@@ -1,5 +1,7 @@
 # Sentiment Analysis with LSTM 
 
+https://www.kaggle.com/code/vmkhoa28/sentiment-2
+
 ## Purpose
 
 This is my first project to learn about NLP by using LSTM networks.
