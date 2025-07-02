@@ -23,7 +23,7 @@ To classify tweets as either positive or negative.
 - Sequence padding and truncation to a fixed length (`max_len = 100`)
 - Train/dev/test split using `train_test_split`
 
-## Model Architecture
+## Model architecture
 
 - Embedding Layer
 - Bidirectional LSTM (`2` layers, `hidden_dim = 32`)
@@ -34,11 +34,15 @@ To classify tweets as either positive or negative.
 - Batch size: `256`
 - Device: CUDA (if available)
 
-## Training Strategy
+## Training
 
-- Early stopping based on validation accuracy
-- Track train/dev loss and accuracy across epochs
-- Save best model based on validation performance
+- Epochs: 20  
+- Loss function: `nn.BCEWithLogitsLoss()`  
+- Optimizer: `torch.optim.AdamW`  
+  - Learning rate: `0.001`  
+  - Weight decay: `0.07`  
+- Batch size: 256  
+- Early stopping with patience = 5  
 
 ## Evaluation
 
@@ -46,6 +50,6 @@ To classify tweets as either positive or negative.
 - Classification Report:
   - Precision (class 1): 0.82
   - Recall (class 1): 0.72
-  - F1-score (macro): 0.78
+  - F1-score: 0.78
 
 
