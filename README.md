@@ -1,4 +1,4 @@
-# Sentiment Analysis with LSTM (PyTorch)
+# Sentiment Analysis with LSTM 
 
 ## Purpose
 
